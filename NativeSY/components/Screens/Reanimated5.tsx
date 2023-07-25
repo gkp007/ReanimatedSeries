@@ -9,6 +9,10 @@ import Animated, {
 } from 'react-native-reanimated';
 import Reanimated6 from './Reanimated6';
 import Reanimated7 from './Reanimated7';
+import Reanimated8 from './Reanimated8';
+import Reanimated9 from './Reanimated9';
+import Reanimated10 from './Reanimated10';
+import Reanimated11 from './Reanimated11';
 const Colors = {
   dark: {
     background: '#1E1E1E',
@@ -85,6 +89,18 @@ export default function Reanimated5({navigation}) {
         </Button>
       <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated7')}>
           navigate to Reanimated 7
+        </Button>
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated8')}>
+          navigate to Reanimated 8
+        </Button>
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated9')}>
+          navigate to Reanimated 9
+        </Button>
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated10')}>
+          navigate to Reanimated 10
+        </Button>
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated11')}>
+          navigate to Reanimated 11
         </Button>
     </Animated.View>
   );
