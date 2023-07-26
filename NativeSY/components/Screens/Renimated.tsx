@@ -53,7 +53,7 @@ const Renimated = ({navigation}) => {
         style={{ marginTop: 10, borderRadius: 10, alignItems:'center',
         justifyContent:'center' }}
         onPress={() => {
-          const ANGLE = 13; // Set the desired rotation angle
+          const ANGLE = 13; 
           rotation.value = withSequence(
             withTiming(1, { duration: 1 }),
             withRepeat(withTiming(ANGLE, { duration: 100 }), 3, true),

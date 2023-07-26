@@ -1,12 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import SlidingCounter from './SlidingCounter';
 
-const Reanimated12 = () => {
+export default function App() {
   return (
-    <View>
-      <Text>Reanimated12</Text>
-    </View>
-  )
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <SlidingCounter />
+      </View>
+    </GestureHandlerRootView>
+  );
 }
 
-export default Reanimated12
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

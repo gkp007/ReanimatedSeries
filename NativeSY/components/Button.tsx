@@ -13,14 +13,13 @@ const Buttons = ({ navigation }) => {
 
   useEffect(() => {
     startAnimation();
-    // Cleanup function to stop the animation when the component unmounts
     return () => stopAnimation();
   }, []);
 
   const startAnimation = () => {
     Animated.timing(translation, {
       toValue: animationEndValue,
-      duration: 2000, // Adjust this value to control the duration of the animation
+      duration: 2000, 
       useNativeDriver: true,
     }).start();
   };
@@ -66,6 +65,9 @@ const Buttons = ({ navigation }) => {
         navigate to Animation
       </Button>
       <Text>Button Screen</Text>
+
+      
+
       <Animated.View
         style={{
           width: boxSize,
@@ -74,6 +76,18 @@ const Buttons = ({ navigation }) => {
           transform: [{ translateX: translation }],
         }}
       />
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated12')}>
+          navigate to Reanimated 12
+        </Button>
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated13')}>
+          navigate to Reanimated 13
+        </Button>
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated14')}>
+          navigate to Reanimated 14
+        </Button>
+      <Button variant="outline" style={{top:35}} onPress={() => navigation.navigate('Reanimated15')}>
+          navigate to Reanimated 15
+        </Button>
     </View>
   );
 };

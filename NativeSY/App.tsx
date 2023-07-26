@@ -17,6 +17,10 @@ import Reanimated8 from './components/Screens/Reanimated8';
 import Reanimated9 from './components/Screens/Reanimated9';
 import Reanimated10 from './components/Screens/Reanimated10';
 import Reanimated11 from './components/Screens/Reanimated11';
+import Reanimated12 from './components/Screens/Reanimated12';
+import Reanimated13 from './components/Screens/Reanimated13';
+import Reanimated14 from './components/Screens/Reanimated14';
+import Reanimated15 from './components/Screens/Reanimated15';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +43,10 @@ function App() {
           <Stack.Screen name='Reanimated9' component={Reanimated9} />
           <Stack.Screen name='Reanimated10' component={Reanimated10} />
           <Stack.Screen name='Reanimated11' component={Reanimated11} />
+          <Stack.Screen name='Reanimated12' component={Reanimated12} />
+          <Stack.Screen name='Reanimated13' component={Reanimated13} />
+          <Stack.Screen name='Reanimated14' component={Reanimated14} />
+          <Stack.Screen name='Reanimated15' component={Reanimated15} />
         </Stack.Navigator>
       </NativeBaseProvider>
     </NavigationContainer>
